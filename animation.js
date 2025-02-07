@@ -1,4 +1,4 @@
-const cardImages = ["card1.jpg", "card2.jpg", "card3.jpg", "card4.jpg", "card5.jpg"];
+const cardImages = ["Колесо Фортуны.jpg", "Луна.jpg", "Мир.jpg", "Повешенный.jpg", "Умеренность.jpg"];
 let shuffledImages = [...cardImages].sort(() => 0.5 - Math.random());
 let selectedCards = [];
 
