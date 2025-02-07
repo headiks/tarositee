@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body data-theme="synthwave" class="flex items-center justify-center min-h-screen">
+
+    <!-- Grid контейнер для карт -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 w-full max-w-screen-lg">
+        <!-- Карты -->
+        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(0)">
+            <img src="images/back.jpg" class="card-img" id="card-0">
+            <p class="card-title">Card 1</p>
+        </div>
+        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(1)">
+            <img src="images/back.jpg" class="card-img" id="card-1">
+            <p class="card-title">Card 2</p>
+        </div>
+        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(2)">
+            <img src="images/back.jpg" class="card-img" id="card-2">
+            <p class="card-title">Card 3</p>
+        </div>
+        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(3)">
+            <img src="images/back.jpg" class="card-img" id="card-3">
+            <p class="card-title">Card 4</p>
+        </div>
+        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(4)">
+            <img src="images/back.jpg" class="card-img" id="card-4">
+            <p class="card-title">Card 5</p>
+        </div>
+    </div>
+
+    <script src="animation.js"></script>
+</body>
+</html>

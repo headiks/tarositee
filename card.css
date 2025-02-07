@@ -1,0 +1,47 @@
+.card {
+    position: relative;
+    border-radius: 12px; /* Закругляем углы */
+    overflow: hidden; /* Обрезаем содержимое */
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3; /* Карты теперь всегда имеют правильное соотношение сторон */
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Картинка полностью заполняет карточку */
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    border-radius: 12px; /* Закругляем углы изображений */
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
+/* Скрываем текст по умолчанию */
+.card-title {
+    font-size: 14px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    opacity: 0; /* Скрыт по умолчанию */
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Показываем текст после переворота */
+.card.revealed .card-title {
+    opacity: 1;
+}
