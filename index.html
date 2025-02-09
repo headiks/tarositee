@@ -12,29 +12,44 @@
 <body data-theme="synthwave" class="flex items-center justify-center min-h-screen">
 
     <!-- Grid контейнер для карт -->
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 p-4 w-full max-w-screen-lg">
-        <!-- Карты -->
-        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(0)">
-            <img src="images/back.jpg" class="card-img" id="card-0">
-            <p class="card-title">Card 1</p>
+    <div class="cards-container p-4 w-full max-w-screen-sm mx-auto">
+        <!-- Первый ряд (3 карты) -->
+        <div class="card-row flex justify-center space-x-4">
+            <div class="card" onclick="revealCard(0)">
+                <img src="images/back.jpg" class="card-img" id="card-0">
+                <p class="card-title">Card 1</p>
+            </div>
+            <div class="card" onclick="revealCard(1)">
+                <img src="images/back.jpg" class="card-img" id="card-1">
+                <p class="card-title">Card 2</p>
+            </div>
+            <div class="card" onclick="revealCard(2)">
+                <img src="images/back.jpg" class="card-img" id="card-2">
+                <p class="card-title">Card 3</p>
+            </div>
         </div>
-        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(1)">
-            <img src="images/back.jpg" class="card-img" id="card-1">
-            <p class="card-title">Card 2</p>
-        </div>
-        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(2)">
-            <img src="images/back.jpg" class="card-img" id="card-2">
-            <p class="card-title">Card 3</p>
-        </div>
-        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(3)">
-            <img src="images/back.jpg" class="card-img" id="card-3">
-            <p class="card-title">Card 4</p>
-        </div>
-        <div class="card bg-gray-800 shadow-xl cursor-pointer" onclick="revealCard(4)">
-            <img src="images/back.jpg" class="card-img" id="card-4">
-            <p class="card-title">Card 5</p>
+    
+        <!-- Второй ряд (4 карты) -->
+        <div class="card-row flex justify-center space-x-4 mt-4">
+            <div class="card offset" onclick="revealCard(3)">
+                <img src="images/back.jpg" class="card-img" id="card-3">
+                <p class="card-title">Card 4</p>
+            </div>
+            <div class="card" onclick="revealCard(4)">
+                <img src="images/back.jpg" class="card-img" id="card-4">
+                <p class="card-title">Card 5</p>
+            </div>
+            <div class="card" onclick="revealCard(5)">
+                <img src="images/back.jpg" class="card-img" id="card-5">
+                <p class="card-title">Card 6</p>
+            </div>
+            <div class="card offset" onclick="revealCard(6)">
+                <img src="images/back.jpg" class="card-img" id="card-6">
+                <p class="card-title">Card 7</p>
+            </div>
         </div>
     </div>
+    
 
     <script src="animation.js"></script>
 </body>
